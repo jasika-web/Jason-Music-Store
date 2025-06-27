@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('cover')->nullable();
             $table->text('description')->nullable();
             $table->double('price')->nullable();
+            
 
             $table->timestamp('created_at')->useCurrent(); // default now()
             $table->integer('created_by')->nullable();
@@ -31,8 +32,7 @@ return new class extends Migration
     }
 
     /**
-     * Reverse the migrations.
-     */
+     * Reverse the migrations.*/
     public function down(): void
     {
         Schema::dropIfExists('books');

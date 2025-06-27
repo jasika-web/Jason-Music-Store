@@ -10,7 +10,7 @@ use OpenApi\Annotations as OA;
 /**
  * Class Book.
  *
- * @author  Evelline <evelline.kristiani@ukrida.ac.id>
+ * @author  Jason <jason.422024004@ukrida.ac.id>
  *
  * @OA\Schema(
  *     description="Book model",
