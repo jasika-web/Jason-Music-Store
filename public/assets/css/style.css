@@ -6713,6 +6713,8 @@ producT css
 .single-product-item .product-thumbnail .ribbon.onsale {
   background: #f14705;
 }
+
+/* ganti ukuran product thumbnail */
 .single-product-item .product-thumbnail > img {
   width: 200px;  
   height: 200px; 

@@ -46,10 +46,17 @@
         <div class="banner-video-area overflow-hidden">
             <div class="container">
                 <div class="row">
-       
+       <!-- looping dan autoplay video -->
                         <div class="banner-video-box">
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/6BtTf0tx7tc?si=BXDtEjGo0_W9kexJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/6BtTf0tx7tc?loop=1&playlist=6BtTf0tx7tc&autoplay=1&mute=1" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                            </div>
             
                 </div>
             </div>
