@@ -26,8 +26,9 @@ function getData(toPage=1){
         // Ganti book ke instrument setiap href
         (response.data.products).forEach((item) => {
             template += `   
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-product-item text-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 instrument-item" data-type="${(item.instrument || '').toLowerCase()}">
+                        <div class="single-product-item text-center">
+
                         <div class="products-images">
                             <a href="/instrument/${item.id}" class="product-thumbnail">
                                 <img src="${item.cover}" alt="Product Images" height="300">
@@ -43,7 +44,7 @@ function getData(toPage=1){
                             </h6>
                             <small class="text-color-primary">${item.instrument}</small>
                             <div class="product-price">
-                                <span class="new-price">IDR ${parseFloat(item.price).toLocaleString()}</span>
+                                <span class="new-price">Rp ${parseFloat(item.price).toLocaleString()}</span>
                             </div>
                         </div>
                     </div>
@@ -52,6 +53,8 @@ function getData(toPage=1){
                 // mengganti item.book menjadi item.instrument karena tablenya instrument
         });
         $(id_el_list).html(template);
+        filterBySelect(); // Apply filter setelah produk di-render
+
         // END---- products
  
     })
@@ -86,3 +89,24 @@ function jumpToPage(page) {
 $(function () {
     getData();
 });
+
+
+
+function filterBySelect() {
+    const selected = document.getElementById("instrumentSelect").value.toLowerCase();
+    const items = document.querySelectorAll(".instrument-item");
+
+    items.forEach(item => {
+        const type = (item.getAttribute("data-type") || "").toLowerCase();
+        item.style.display = (selected === "" || selected === type) ? "" : "none";
+    });
+}
+
+
+
+
+
+
+
+
+

@@ -189,9 +189,10 @@ a:focus {
           box-shadow: none;
 }
 
+/* ganti hover tulisan plp */
 a:hover {
   text-decoration: none;
-  color: #dcb14a;
+  color: #6e4adc;
 }
 
 button, input[type=submit] {
@@ -491,12 +492,12 @@ select:focus {
 
 ::-moz-selection {
   color: #ffffff;
-  background-color: #dcb14a;
+  background-color: #6e4adc;
 }
 
 ::selection {
   color: #ffffff;
-  background-color: #dcb14a;
+  background-color: #6e4adc;
 }
 
 form {
@@ -536,8 +537,12 @@ form input::placeholder, form textarea::placeholder {
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, input[type=search]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=range]:focus, input[type=date]:focus, input[type=month]:focus, input[type=week]:focus, input[type=time]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=color]:focus, textarea:focus, select:focus, select:focus, textarea:focus {
-  color: #dcb14a;
-  border-color: #dcb14a;
+  color: #6e4adc;
+  border-color: #6e4adc;
+}
+/* choose instrument type */
+.instrument-item {
+    transition: all 0.3s ease-in-out;
 }
 
 input[type=checkbox] {
@@ -2049,13 +2054,14 @@ input[type=checkbox] {
   position: absolute;
   min-width: 19px;
   height: 19px;
-  background-color: #dcb14a;
+  background-color: #6e4adc;
   text-align: center;
   line-height: 19px;
   border-radius: 19px;
   bottom: 1px;
   right: -10px;
   padding: 0 5px;
+  color: white;
 }
 .header-cart:hover .item-counter {
   color: #ffffff;
@@ -6671,6 +6677,46 @@ producT css
   font-weight: 500;
 }
 
+/* popup member */
+.emodal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    padding-top: 400px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+}
+
+.emodal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 6px;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+
 /*================================================
 =                 17. Product Css             =       
 ==================================================*/
@@ -7003,6 +7049,7 @@ producT css
   left: auto;
 }
 
+/* ganti ukuran font deskripsi */
 .product-details-content p {
   font-size: 15px;
 }

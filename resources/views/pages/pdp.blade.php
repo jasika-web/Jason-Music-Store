@@ -98,17 +98,17 @@
                             <span class="label">Share this items :</span>
                             <ul class="helendo-social-share socials-inline">
                                 <li>
-                                    <a class="share-facebook helendo-facebook" href="#" target="_blank">
+                                    <a class="share-facebook helendo-facebook" href="https://www.facebook.com/Gudangmusic/?locale=id_ID" target="_blank">
                                         <i class="social_facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="share-twitter helendo-twitter" href="#" target="_blank">
+                                    <a class="share-twitter helendo-twitter" href="https://x.com/GudangMusikShop" target="_blank">
                                         <i class="social_twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="share-instagram helendo-instagram" href="#" target="_blank">
+                                    <a class="share-instagram helendo-instagram" href="https://www.instagram.com/gudangmusikshop/" target="_blank">
                                         <i class="social_instagram"></i>
                                     </a>
                                 </li>

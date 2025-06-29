@@ -10,26 +10,28 @@
                 <div class="col-lg-3 col-md-3 order-md-1 order-2  small-mt__40">
                     <div class="shop-widget widget-shop-publishers mt-3">
                         <div class="product-filter">
-                            <h6 class="mb-20">Type</h6>
-                            <select class="_filter form-select form-select-sm" name="_publisher" onchange="getData()">
+                            <h6 class="mb-20">Instrument Type</h6>
+                             <select class="_filter form-select form-select-sm" id="instrumentSelect" onchange="filterBySelect()" 
+                             class="_filter" name="instrument_type">
                                 <option value="" selected>All</option>
-                                <option value="putnam">Putnam</option>
-                                <option value="harriman house">Harriman House</option>
-                                <option value="balai pustaka">Balai Pustaka</option>
-                                <option value="Lentera dipantara">Lentera Dipantara</option>
-                                <option value="pan books">Pan Books</option>
-                                <option value="firefly books">Firefly Books</option>
-                                <option value="gramedia">Gramedia</option>
-                                <option value="scholastic">Scholastic</option>
-                                <option value="harper">Harper</option>
-                                <option value="dk children">DK Children</option>
-                                <option value="bentang pustaka">Bentang Pustaka</option>
-                                <option value="gagas media">Gagas Media</option>
-                                <option value="grasindo">Grasindo</option>
-                                <option value="Marjin Kiri">Marjin Kiri</option>
+                                <option value="electric guitar">Electric Guitar</option>
+                                <option value="acoustic guitar">Acoustic Guitar</option>
+                                <option value="Electric Nylon Guitar">Electric Nylon Guitars</option>
+                                <option value="8 strings electric guitar">8 Strings Guitar</option>
+                                <option value="electric bass">Electric Bass</option>
+                                <option value="stage piano/electric piano">Stage Piano/Electric Piano</option>
+                                <option value="drum set">Drum Set</option>
+                                <option value="Guitar & Bass Capo">Capo</option>
+                                <option value="guitar pedals">Guitar Pedals</option>
+                                <option value="guitar amplifier">Amp</option>
+                                <option value="audio interface">Audio Interface</option>
+                                <option value="Guitar Stand">Stand</option>
+                                <option value="Instrument Cable">Cable</option>
+                                <option value="Guitar Pickups">Guitar Pickups</option>
                             </select>
                         </div>
                     </div>
+                    
                     <!-- Product Filter -->
                     <div class="shop-widget widget-color">
                         <div class="product-filter">

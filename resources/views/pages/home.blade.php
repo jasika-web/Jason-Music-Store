@@ -86,8 +86,8 @@
         <!-- Our Brand Area End -->
 
         <!-- Our Member Area Start -->
+        <!-- Area Member -->
         <div class="our-member-area section-space--pb_120">
-
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -101,9 +101,9 @@
                                 </div>
                                 <div class="col-lg-7 col-md-8">
                                     <div class="member-wrap">
-                                        <form action="#" class="member--two">
-                                            <input class="input-box" type="text" placeholder="Your email address">
-                                            <button class="submit-btn"><i class="icon-arrow-right"></i></button>
+                                        <form id="memberForm" class="member--two">
+                                            <input class="input-box" id="emailInput" type="text" placeholder="Your email address" required>
+                                            <button class="submit-btn" type="submit"><i class="icon-arrow-right"></i></button>
                                         </form>
                                     </div>
                                 </div>
@@ -111,6 +111,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal Popup -->
+        <div id="popupModal" class="emodal">
+            <div class="emodal-content">
+                <span class="close-btn">&times;</span>
+                <p>🎉 Selamat Anda telah terdaftar menjadi<br> 
+                    member dan mendapatkan diskon 50%</p>
             </div>
         </div>
         <!-- Our Member Area End -->

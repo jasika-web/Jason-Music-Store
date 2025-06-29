@@ -76,3 +76,25 @@ function getData(){
 $(function () {
     getData();
 });
+
+// untuk pop 
+document.getElementById("memberForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var email = document.getElementById("emailInput").value;
+
+    if (email.trim() !== "") {
+        var modal = document.getElementById("popupModal");
+        modal.style.display = "block";
+    }
+});
+
+document.querySelector(".close-btn").onclick = function() {
+    document.getElementById("popupModal").style.display = "none";
+};
+
+window.onclick = function(event) {
+    var modal = document.getElementById("popupModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};

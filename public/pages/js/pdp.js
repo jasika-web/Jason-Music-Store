@@ -11,7 +11,7 @@ function getDataByWindowUrlKey(){
       $('.product-img-main-href').attr('href',response.data.cover);
       $('.product-img-main-src').attr('src',response.data.cover);
       $('#product-name').html(response.data.title);
-      $('#product-price').html('IDR '+parseFloat(response.data.price).toLocaleString());
+      $('#product-price').html('Rp '+parseFloat(response.data.price).toLocaleString());
       $('#product-description').html(response.data.description);
       $('#product-author').html(response.data.instrument);
       $('#product-publisher').html('First Published '+response.data.publication_year+' by '+response.data.publisher);
